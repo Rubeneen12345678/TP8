@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: rgb(72, 73, 73);
+}
+header nav ul{
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header nav ul li {
+    list-style: none;
+    display: flex;
+    padding: 20px 20px 0px 0px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgb(10, 255, 10);
+    padding: 5px;
+    border-radius: 45px;
+    transition: 700ms;
+}
+header nav ul li a:hover {
+    background: transparent;
+    color: rgb(10, 255, 10);
+    border-color: blue;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgb(4, 196, 221);
+}
+h1 {
+    display: flex;
+    justify-content: center;  
+    color: rgb(228, 27, 27);
+    background-color: rgb(136, 134, 134); 
+    font-size: 50px;
+}
+section {
+   
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 0px 47px;
+    color: rgb(201, 57, 57);
+    width: 100%;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top:23%;
+    width:100%;
+    height:30px;
+    align-items: center;
+    background-color: rgb(136, 134, 134);
+    font-size: 20px;
+}
+h3{
+align-content: center;
+font-size: 25px;
+color: rgb(217, 29, 255);
+}
+span {
+    color: rgb(16, 91, 230);
+}
+.contact-wrapper {
+    display: grid;
+    background-color: black;
+    color: white;
+}
+h3{
+    text-align: center;
+    }
+form {
+    display: grid;
+    align-items: center;
+    color: rgb(255, 174, 0);
+}
+input {
+    outline: 0;
+    border: 1px solid rgb(192, 103, 103);
+    border-radius: 15px;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    transition: 700ms;
+}
+input:hover {
+    background-color: rgb(255, 214, 152);
+}
+textarea {
+    outline: 0;
+    border: 1px solid rgb(192, 103, 103);
+    border-radius: 15px;
+    background: transparent;
+    transition: 700ms;
+}
+textarea:hover {
+    background-color: rgb(255, 214, 152);
+}
+.contact-info {
+padding: 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-size: 25px;
+}
+.contact-info ul {
+    list-style: none;
+}
+.contact-info ul li{
+    align-items: center;
+}
+.contact-info ul li i {
+    padding-right: 15px;
+    color: cyan;
+}
+h5 {
+    padding-top: 20px;
+}
+.enviar {
+    color: rgb(22, 235, 86);
+    background-color: transparent;
+    font-size: 20px;
+    border: 2px solid grey;
+    border-radius: 15%;
+    transition: 700ms;
+}
+.enviar:hover {
+    background-color: gray;
+    border-color: rgb(212, 208, 208);
+    font-size: 25px;
+}
+.contact-form {
+text-align: center;
+}
+@media (min-width: 425px) {
+    .contact-wrapper {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        background-color: black;
+        color: white;
+        
+        }
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            color: rgb(255, 174, 0);
+        }
+}
+@media (max-whidth: 424px) {
+input{
+    outline: 0;
+    border: 1px solid rgb(192, 103, 103);
+    border-radius: 15px;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    align-items: center;
+}
+body{
+    width: 100%;
+}
+}
